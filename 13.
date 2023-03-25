@@ -1,0 +1,45 @@
+#include <stdio.h>
+
+int main() {
+    int M, N, i, j;
+
+    // Get the size of the matrices from the user
+    printf("Enter the number of rows (M) and columns (N) for the matrices:\n");
+    scanf("%d %d", &M, &N);
+
+    // Declare two matrices of size M by N
+    int matrix1[M][N], matrix2[M][N], sum[M][N];
+
+    // Get the values of the two matrices from the user
+    printf("Enter the values of the first matrix:\n");
+    for (i = 0; i < M; i++) {
+        for (j = 0; j < N; j++) {
+            scanf("%d", &matrix1[i][j]);
+        }
+    }
+
+    printf("Enter the values of the second matrix:\n");
+    for (i = 0; i < M; i++) {
+        for (j = 0; j < N; j++) {
+            scanf("%d", &matrix2[i][j]);
+        }
+    }
+
+    // Add the two matrices and store the result in the sum matrix
+    for (i = 0; i < M; i++) {
+        for (j = 0; j < N; j++) {
+            sum[i][j] = matrix1[i][j] + matrix2[i][j];
+        }
+    }
+
+    // Print the sum matrix
+    printf("The sum of the two matrices is:\n");
+    for (i = 0; i < M; i++) {
+        for (j = 0; j < N; j++) {
+            printf("%d ", sum[i][j]);
+        }
+        printf("\n");
+    }
+
+    return 0;
+}

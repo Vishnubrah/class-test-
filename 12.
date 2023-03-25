@@ -1,0 +1,11 @@
+A = {{1, 1}, {2, 2}}
+B = {{1, 1}, {2, 2}}
+
+result = {{0, 0}, {0, 0}} // initialize the resulting matrix with zeros
+
+for i = 0 to m-1 do // iterate over rows of A
+  for j = 0 to p-1 do // iterate over columns of B
+    for k = 0 to n-1 do // iterate over columns of A and rows of B
+      result[i][j] += A[i][k] * B[k][j]
+
+// result = {{3, 3}, {6, 6}}

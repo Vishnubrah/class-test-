@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+    int a = 10, b = 20;
+    int sum, diff, prod;
+    int *p1, *p2;
+
+    p1 = &a; // Point p1 to the address of variable a
+    p2 = &b; // Point p2 to the address of variable b
+
+    sum = *p1 + *p2; // Add the values pointed to by p1 and p2
+    diff = *p1 - *p2; // Subtract the value pointed to by p2 from p1
+    prod = *p1 * *p2; // Multiply the values pointed to by p1 and p2
+
+    printf("Sum = %d\n", sum);
+    printf("Difference = %d\n", diff);
+    printf("Product = %d\n", prod);
+
+    return 0;
+}

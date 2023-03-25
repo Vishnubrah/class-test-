@@ -1,0 +1,9 @@
+# Ask user to input two numbers
+num1 = float(input("Enter first number: "))
+num2 = float(input("Enter second number: "))
+
+# Multiply the two numbers
+result = num1 * num2
+
+# Display the result
+print("The product of", num1, "and", num2, "is", result)
